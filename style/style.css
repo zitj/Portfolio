@@ -115,4 +115,47 @@ body {
 .wrapper .contact p:nth-of-type(5) {
   margin-bottom: 20px;
 }
+
+.wrapper .swiper-container.none {
+  display: none;
+  opacity: 0;
+}
+
+.wrapper .swiper-container {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5%;
+  width: 350px;
+  height: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3em;
+  position: relative;
+}
+
+.wrapper .swiper-slide img {
+  margin-top: -50px;
+}
+
+.wrapper .swiper-slide p,
+.wrapper .swiper-slide a {
+  display: block;
+  font-size: 0.4em;
+  position: absolute;
+  bottom: 3%;
+}
+
+.wrapper .swiper-slide p {
+  bottom: 4%;
+}
 /*# sourceMappingURL=style.css.map */
