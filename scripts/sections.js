@@ -1,7 +1,25 @@
 const nav = document.querySelector('nav');
 const contact = document.querySelector('.contact');
-const graphicDesign = document.querySelector('.swiper-container');
+const swiperContainer = document.querySelector('.swiper-container');
+const swiperWrapper = document.querySelector('.swiper-wrapper');
 const sectionButtons = nav.querySelectorAll('a');
+
+let graphicDesignProjects = [
+    {  
+        img: 1,
+        title: 'Oko sokolovo',
+        link: '#',
+    },
+    {  
+        img: 2,
+        title: 'Kutre neko',
+        link: '#',
+    },
+];
+
+console.log(graphicDesignProjects);
+
+
 
 const buttonClassRemoval = () =>{
     for(let i = 0; i < sectionButtons.length; i++){
@@ -9,25 +27,26 @@ const buttonClassRemoval = () =>{
     }
 }
 const classRemoval = () =>{
-    graphicDesign.classList.add('none');
+    swiperContainer.classList.add('none');
 }
-
+ 
 for(let i = 0; i < sectionButtons.length; i++){
     sectionButtons[i].addEventListener('click', () => {
         buttonClassRemoval();
         sectionButtons[i].classList.add('active');
         if(sectionButtons[0].classList.contains('active')){
             contact.classList.add('none');
-            graphicDesign.classList.add('none');
+            swiperContainer.classList.add('none');
         }
         if(sectionButtons[1].classList.contains('active')){
             contact.classList.add('none');
-            graphicDesign.classList.remove('none');
+            swiperContainer.classList.remove('none');
         }
         if(sectionButtons[2].classList.contains('active')){
-            graphicDesign.classList.add('none');
+            swiperContainer.classList.add('none');
             contact.classList.remove('none');
         }
     });
 }
+
 setTimeout(classRemoval, 0);
