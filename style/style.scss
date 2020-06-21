@@ -96,12 +96,7 @@ nav{
         
     }
 }
-#ovako{
-    display: none;
-}
-#ovako{
-    display: flex;
-}
+
 .swiper-container.none{
     display: none;
 }
@@ -120,7 +115,7 @@ nav{
     font-size: 3em;
     position: relative;
     img{
-        margin-top: -50px;
+        margin-top: 0px;
     }
     p,
     a{

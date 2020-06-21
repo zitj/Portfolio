@@ -1,5 +1,6 @@
 const nav = document.querySelector('nav');
 const contact = document.querySelector('.contact');
+const ovako = document.getElementById('ovako');
 const swiperContainer = document.querySelector('.swiper-container');
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 const sectionButtons = nav.querySelectorAll('a');
