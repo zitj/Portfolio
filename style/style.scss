@@ -37,11 +37,13 @@ nav{
         color: #333333;
     }
 }
+.contact.none{
+    display:none;
+}
 .contact{
     width: 80%;
     margin-left: 10%;
     text-align: center;
-    // display: none;
     .picture{
         margin-left: 41%;
         height: 130px;

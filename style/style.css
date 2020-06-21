@@ -49,6 +49,10 @@ body {
   color: #333333;
 }
 
+.wrapper .contact.none {
+  display: none;
+}
+
 .wrapper .contact {
   width: 80%;
   margin-left: 10%;
