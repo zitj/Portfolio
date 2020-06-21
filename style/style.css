@@ -15,6 +15,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  border-radius: 2px;
 }
 
 .wrapper nav {
@@ -32,6 +33,7 @@ body {
 
 .wrapper nav a {
   background-color: rgba(7, 192, 7, 0.89);
+  border-radius: 2px;
   color: white;
   text-decoration: none;
   display: -webkit-box;
@@ -40,6 +42,11 @@ body {
   font-size: 1em;
   padding: 0 99px;
   text-transform: uppercase;
+}
+
+.wrapper nav .active {
+  background: white;
+  color: #333333;
 }
 
 .wrapper .contact {
