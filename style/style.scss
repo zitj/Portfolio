@@ -39,11 +39,20 @@ nav{
         padding: 0 99px;
         // border: 3px solid green;
         text-transform: uppercase;
-        
+        &:hover{
+            background-color: rgba(8, 185, 8, 0.979);
+        }
+        &:active{
+            background-color: rgba(7, 192, 7, 0.89);
+        }
     }
     .active{
         background: white;
         color: #333333;
+        &:hover{
+            background: white;
+            color: #333333; 
+        }
     }
 }
 .contact.none{
@@ -104,6 +113,16 @@ nav{
             margin-bottom: 20px;
         }
         
+    }
+    .icons{
+        a{
+            &:hover{
+                opacity: .8;
+            }
+            &:active{
+                opacity: 1;
+            }
+        }
     }
 }
 
