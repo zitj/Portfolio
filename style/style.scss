@@ -31,7 +31,7 @@ nav{
     text-align: center;
     a{
         background-color: rgba(7, 192, 7, 0.89);
-        border-radius: 2px;
+        border-radius: 1px;
         color: white;
         text-decoration: none;
         display: flex;
@@ -63,6 +63,7 @@ nav{
     margin-left: 10%;
     text-align: center;
     .picture{
+        margin-top: 6%;
         margin-left: 41%;
         height: 130px;
         width: 130px;
@@ -87,21 +88,24 @@ nav{
             margin-top: 14px;
         }
     }
+ 
     p{
         &:nth-of-type(1){
         margin-top: 15px;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         }
         &:nth-of-type(2),
         &:nth-of-type(4){
             margin-bottom: 0px;
             font-size: .9em;
+            
         }
         &:nth-of-type(4){
             margin-top: 10px;
         }
         &:nth-of-type(5),
         &:nth-of-type(3){
+            
             margin-top: 2px;
             font-size: 1em;
             font-weight: 600;
@@ -170,7 +174,7 @@ nav{
     a{
         padding: 8px 16px;
         background: rgba(7, 192, 7, 0.829);
-        box-shadow: 8px -8px 20px 0px rgba(4, 251, 4, 0.329);
+        box-shadow: 8px -8px 20px 0px rgba(4, 251, 4, 0.157);
         font-weight: 300;
         text-transform: uppercase;
         color: white;
@@ -183,13 +187,13 @@ nav{
         font-size: .25em;
     }
     a:hover{
-        box-shadow: 10px -10px 20px 0px rgba(4, 251, 4, 0.493);
+        box-shadow: 10px -10px 20px 0px rgba(4, 251, 4, 0.274);
         background: rgba(11, 214, 11, 0.972);
         // padding: 11px 21px;
         transform: scale(1.03);
     }
     a:active{
-        box-shadow: 8px -8px 20px 0px rgba(4, 251, 4, 0.400);
+        box-shadow: 7px -7px 20px 0px rgba(4, 251, 4, 0.200);
         background: rgba(7, 192, 7, 0.89);
         // padding: 10px 20px;
         transform: scale(1);
