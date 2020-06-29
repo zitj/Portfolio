@@ -1,25 +1,9 @@
 const nav = document.querySelector('nav');
 const contact = document.querySelector('.contact');
 const ovako = document.getElementById('ovako');
-const swiperContainer = document.querySelector('.swiper-container');
-const swiperWrapper = document.querySelector('.swiper-wrapper');
+const swiperContainer = document.getElementsByClassName('swiper-container');
+const swiperWrapper = document.getElementsByClassName('swiper-wrapper');
 const sectionButtons = nav.querySelectorAll('a');
-
-let graphicDesignProjects = [
-    {  
-        img: 1,
-        title: 'Oko sokolovo',
-        link: '#',
-    },
-    {  
-        img: 2,
-        title: 'Kutre neko',
-        link: '#',
-    },
-];
-
-console.log(graphicDesignProjects);
-
 
 
 const buttonClassRemoval = () =>{
@@ -28,7 +12,8 @@ const buttonClassRemoval = () =>{
     }
 }
 const classRemoval = () =>{
-    swiperContainer.classList.add('none');
+    swiperContainer[0].classList.add('none');
+    swiperContainer[1].classList.add('none');
 }
  
 for(let i = 0; i < sectionButtons.length; i++){
@@ -37,14 +22,16 @@ for(let i = 0; i < sectionButtons.length; i++){
         sectionButtons[i].classList.add('active');
         if(sectionButtons[0].classList.contains('active')){
             contact.classList.add('none');
-            swiperContainer.classList.add('none');
+            swiperContainer[0].classList.add('none');
+            swiperContainer[1].classList.remove('none');
         }
         if(sectionButtons[1].classList.contains('active')){
             contact.classList.add('none');
-            swiperContainer.classList.remove('none');
+            swiperContainer[0].classList.remove('none');
+            swiperContainer[1].classList.add('none');
         }
         if(sectionButtons[2].classList.contains('active')){
-            swiperContainer.classList.add('none');
+            classRemoval();
             contact.classList.remove('none');
         }
     });
