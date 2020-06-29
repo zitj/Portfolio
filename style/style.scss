@@ -163,8 +163,36 @@ nav{
     margin-top: 8%;
 }
 .swiper-slide{
-    width: 100%;
+    width: 50%;
     height: 100%;
     margin-top: 0%;
+    position: relative;
+    a{
+        padding: 8px 16px;
+        background: rgba(7, 192, 7, 0.829);
+        box-shadow: 8px -8px 20px 0px rgba(4, 251, 4, 0.329);
+        font-weight: 300;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        position: absolute;
+        left: 7%;
+        border-radius: 3px;
+        transition: .2s ease;
+        transform: scale(1);
+        font-size: .25em;
+    }
+    a:hover{
+        box-shadow: 10px -10px 20px 0px rgba(4, 251, 4, 0.493);
+        background: rgba(11, 214, 11, 0.972);
+        // padding: 11px 21px;
+        transform: scale(1.03);
+    }
+    a:active{
+        box-shadow: 8px -8px 20px 0px rgba(4, 251, 4, 0.400);
+        background: rgba(7, 192, 7, 0.89);
+        // padding: 10px 20px;
+        transform: scale(1);
+    }
 }
 }

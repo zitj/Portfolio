@@ -192,8 +192,44 @@ body {
 }
 
 .web-design .swiper-slide {
-  width: 100%;
+  width: 50%;
   height: 100%;
   margin-top: 0%;
+  position: relative;
+}
+
+.web-design .swiper-slide a {
+  padding: 8px 16px;
+  background: rgba(7, 192, 7, 0.829);
+  -webkit-box-shadow: 8px -8px 20px 0px rgba(4, 251, 4, 0.329);
+          box-shadow: 8px -8px 20px 0px rgba(4, 251, 4, 0.329);
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  left: 7%;
+  border-radius: 3px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  font-size: .25em;
+}
+
+.web-design .swiper-slide a:hover {
+  -webkit-box-shadow: 10px -10px 20px 0px rgba(4, 251, 4, 0.493);
+          box-shadow: 10px -10px 20px 0px rgba(4, 251, 4, 0.493);
+  background: rgba(11, 214, 11, 0.972);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.web-design .swiper-slide a:active {
+  -webkit-box-shadow: 8px -8px 20px 0px rgba(4, 251, 4, 0.4);
+          box-shadow: 8px -8px 20px 0px rgba(4, 251, 4, 0.4);
+  background: rgba(7, 192, 7, 0.89);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=style.css.map */
