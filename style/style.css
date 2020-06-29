@@ -8,8 +8,52 @@ body {
 .intro {
   height: 100vh;
   width: 100%;
-  background: white;
   z-index: 100;
+  position: relative;
+}
+
+.intro .top,
+.intro .bottom {
+  height: 50%;
+  width: 100%;
+  background: #07c007;
+  position: absolute;
+}
+
+.intro .top .letter,
+.intro .bottom .letter {
+  height: 200px;
+  width: 200px;
+  margin: 0;
+  font-size: 20em;
+  color: white;
+  position: absolute;
+  left: 50%;
+  z-index: 120;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.intro .top {
+  top: 0%;
+}
+
+.intro .top .letter {
+  bottom: -12%;
+  left: 48.2%;
+}
+
+.intro .bottom {
+  bottom: 0%;
+}
+
+.intro .bottom .letter {
+  left: 51.5%;
+  top: -10%;
+}
+
+.wrapper.start {
+  z-index: -1;
 }
 
 .wrapper {
@@ -23,6 +67,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 2px;
+  z-index: 1;
 }
 
 .wrapper nav {
