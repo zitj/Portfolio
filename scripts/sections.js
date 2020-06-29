@@ -4,6 +4,9 @@ const ovako = document.getElementById('ovako');
 const swiperContainer = document.getElementsByClassName('swiper-container');
 const swiperWrapper = document.getElementsByClassName('swiper-wrapper');
 const sectionButtons = nav.querySelectorAll('a');
+const intro = document.querySelector('.intro');
+const introTop = document.querySelector('.top');
+const introBottom = document.querySelector('.bottom');
 
 
 const buttonClassRemoval = () =>{
@@ -15,7 +18,10 @@ const classRemoval = () =>{
     swiperContainer[0].classList.add('none');
     swiperContainer[1].classList.add('none');
 }
- 
+const introAnimationEvent = () =>{
+    intro.classList.remove('none');
+    intro.classList.add('active');
+} 
 for(let i = 0; i < sectionButtons.length; i++){
     sectionButtons[i].addEventListener('click', () => {
         buttonClassRemoval();
@@ -36,5 +42,8 @@ for(let i = 0; i < sectionButtons.length; i++){
         }
     });
 }
-
+    introTop.addEventListener('animationend', () => {
+        intro.classList.remove('active');
+        intro.classList.add('none');
+      });
 setTimeout(classRemoval, 0);
