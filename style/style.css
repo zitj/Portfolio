@@ -126,6 +126,12 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  .wrapper {
+    height: 95%;
+  }
+}
+
 .wrapper nav {
   height: 50px;
   line-height: 48px;
@@ -166,7 +172,7 @@ body {
 
 @media (max-width: 860px) {
   .wrapper nav a {
-    padding: 0 10%;
+    padding: 0 10.3%;
     font-size: .9em;
   }
 }
@@ -326,12 +332,36 @@ body {
 }
 
 .wrapper .contact .picture {
-  margin: 6% auto 0%;
+  margin: 8% auto 0%;
   height: 130px;
   width: 130px;
   border: 1px solid #00BD21;
   border-radius: 80%;
   background: url(../profilePicture/profilna3.png) center no-repeat;
+}
+
+@media (max-width: 865px) {
+  .wrapper .contact .picture {
+    margin-top: 9%;
+  }
+}
+
+@media (max-width: 830px) {
+  .wrapper .contact .picture {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 570px) {
+  .wrapper .contact .picture {
+    margin-top: 13%;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper .contact .picture {
+    margin-top: -4%;
+  }
 }
 
 .wrapper .contact .about-me {
@@ -544,6 +574,73 @@ body {
   height: 100%;
   margin-top: 0%;
   position: relative;
+}
+
+@media (max-width: 860px) {
+  .web-design .swiper-slide {
+    width: 55%;
+  }
+}
+
+@media (max-width: 785px) {
+  .web-design .swiper-slide {
+    width: 60%;
+  }
+}
+
+@media (max-width: 725px) {
+  .web-design .swiper-slide {
+    width: 63%;
+  }
+}
+
+@media (max-width: 680px) {
+  .web-design .swiper-slide {
+    width: 65%;
+  }
+}
+
+@media (max-width: 660px) {
+  .web-design .swiper-slide {
+    width: 68%;
+  }
+}
+
+@media (max-width: 630px) {
+  .web-design .swiper-slide {
+    width: 70%;
+  }
+}
+
+@media (max-width: 620px) {
+  .web-design .swiper-slide {
+    width: 73%;
+  }
+}
+
+@media (max-width: 590px) {
+  .web-design .swiper-slide {
+    width: 76%;
+  }
+}
+
+@media (max-width: 560px) {
+  .web-design .swiper-slide {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .web-design .swiper-slide {
+    margin-top: 25%;
+  }
+}
+
+@media (max-width: 500px) {
+  .web-design .swiper-slide img {
+    width: 320px;
+    height: 280px;
+  }
 }
 
 .web-design .swiper-slide a {

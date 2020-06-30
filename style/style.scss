@@ -88,7 +88,9 @@ body{
     z-index: 1;
     @include media("<=desktop"){
         width: 90%;
-       
+    }
+    @include media("<=smallPhone"){
+        height: 95%;
     }
 nav{
     height: 50px;
@@ -113,7 +115,7 @@ nav{
             padding: 0 10.5%;
         }
         @include media("<=860px"){
-            padding: 0 10%;
+            padding: 0 10.3%;
             font-size: .9em;
         }
         @include media("<=790px"){
@@ -205,12 +207,25 @@ nav{
     margin-left: 10%;
     text-align: center;
     .picture{
-        margin: 6% auto 0%;
+        margin: 8% auto 0%;
         height: 130px;
         width: 130px;
         border: 1px solid #00BD21;
         border-radius: 80%;
         background: url(../profilePicture/profilna3.png) center no-repeat;
+        @include media("<=865px"){
+            margin-top: 9%;
+        }
+        @include media("<=830px"){
+            margin-top: 10%;
+        }
+        @include media("<=570px"){
+            margin-top: 13%;
+        }
+        @include media("<=smallPhone"){
+            margin-top: -4%;
+        }
+       
     }
     .about-me{
         width: 60%;
@@ -362,6 +377,43 @@ nav{
     height: 100%;
     margin-top: 0%;
     position: relative;
+    @include media("<=860px"){
+        width: 55%;
+    }
+    @include media("<=785px"){
+        width: 60%;
+    }
+    @include media("<=725px"){
+        width: 63%;
+    }
+    @include media("<=680px"){
+        width: 65%;
+    }
+    @include media("<=660px"){
+        width: 68%;
+    }
+    @include media("<=630px"){
+        width: 70%;
+    }
+    @include media("<=620px"){
+        width: 73%;
+    }
+    @include media("<=590px"){
+        width: 76%;
+    }
+    @include media("<=560px"){
+        width: 90%;
+    }
+    @include media("<=500px"){
+        margin-top: 25%;
+        
+    }  
+    img{
+        @include media("<=500px"){
+            width: 320px;
+            height: 280px;
+        }  
+    }
     a{
         padding: 8px 16px;
         background: rgba(7, 192, 7, 0.829);
