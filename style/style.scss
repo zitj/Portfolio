@@ -1,9 +1,12 @@
+@import "include-media.scss";
+
 body{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     color: #333333;
     overflow: hidden;
+    
 }
 .intro.none{
     display: none;
@@ -83,6 +86,10 @@ body{
     transform: translate(-50%,-50%);
     border-radius: 2px;
     z-index: 1;
+    @include media("<=desktop"){
+        width: 90%;
+       
+    }
 nav{
     height: 50px;
     line-height: 48px;
@@ -90,6 +97,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+   
     a{
         background-color: rgba(7, 192, 7, 0.89);
         border-radius: 1px;
@@ -97,7 +105,83 @@ nav{
         text-decoration: none;
         display: flex;
         font-size: 1em;
-        padding: 0 99px;
+        padding: 0 11%;
+        @include media("<=desktop"){
+            font-size: .95em;
+        }
+        @include media("<=950px"){
+            padding: 0 10.5%;
+        }
+        @include media("<=860px"){
+            padding: 0 10%;
+            font-size: .9em;
+        }
+        @include media("<=790px"){
+            padding: 0 9.8%;
+        }
+       
+        @include media("<=730px"){
+            padding: 0 9%;
+        }
+        @include media("<=685px"){
+            padding: 0 8.5%;
+        }
+        @include media("<=610px"){
+            padding: 0 8%;
+        }
+        @include media("<=595px"){
+            padding: 0 7.8%;
+        }
+        @include media("<=585px"){
+            padding: 0 7.5%;
+        }
+        @include media("<=550px"){
+            padding: 0 7%;
+        }
+        @include media("<=530px"){
+            padding: 0 6.5%;
+        }
+        @include media("<=490px"){
+            padding: 0 6%;
+        }
+        @include media("<=470px"){
+            padding: 0 5%;
+        }
+        @include media("<=430px"){
+            padding: 0 4.5%;
+        }
+        @include media("<=415px"){
+            padding: 0 4%;
+        }
+        @include media("<=395px"){
+            padding: 0 3.5%;
+        }
+        @include media("<=395px"){
+            padding: 0 3.5%;
+        }
+        @include media("<=376px"){
+            padding: 0 3%;
+        }
+        @include media("<=362px"){
+            font-size: 0.86em;
+        }
+        @include media("<=350px"){
+            font-size: 0.83em;
+        }
+        @include media("<=335px"){
+            font-size: 0.8em;
+        }
+        @include media("<=325px"){
+            font-size: 0.76em;
+        }
+        @include media("<=310px"){
+            font-size: 0.73em;
+        }
+        @include media("<=300px"){
+            font-size: 0.68em;
+        }
+       
+        
         // border: 3px solid green;
         text-transform: uppercase;
         &:hover{
