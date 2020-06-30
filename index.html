@@ -86,14 +86,14 @@
     </div> <!-- end .wrapper -->
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script type="module">
-        import Swiper from 'https://unpkg.com/swiper/js/swiper.esm.browser.bundle.min.js';
-      
-        const swiper = new Swiper('.swiper-container', {
+    <script>
+    window.onload = function () {
+        //initialize swiper when document ready
+        var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
         // direction: 'vertical',
         // loop: true,
-        effect: 'coverflow',
+          effect: 'coverflow',
           grabCursor: true,
           centeredSlides: true,
           slidesPerView: 'auto',
@@ -103,25 +103,9 @@
             depth: 100,
             modifier: 1,
             slideShadows: true,
-          
-        // If we need pagination
-        // pagination: {
-        //   el: '.swiper-pagination',
-        // },
+        }})
+      };</script>
     
-        // // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        }
-    
-        // // And if we need scrollbar
-        // scrollbar: {
-        //   el: '.swiper-scrollbar',
-        // },
-        }
-      });
-      </script>
     <!-- <script>let mySwiper = new Swiper ('.swiper-container', {
         // Optional parameters
         // direction: 'vertical',
