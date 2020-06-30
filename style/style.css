@@ -336,7 +336,109 @@ body {
 
 .wrapper .contact .about-me {
   width: 60%;
-  margin-left: 20%;
+  margin: 0% auto;
+}
+
+@media (max-width: 950px) {
+  .wrapper .contact .about-me {
+    width: 65%;
+  }
+}
+
+@media (max-width: 865px) {
+  .wrapper .contact .about-me {
+    width: 70%;
+  }
+}
+
+@media (max-width: 810px) {
+  .wrapper .contact .about-me {
+    width: 72%;
+  }
+}
+
+@media (max-width: 780px) {
+  .wrapper .contact .about-me {
+    width: 74%;
+  }
+}
+
+@media (max-width: 760px) {
+  .wrapper .contact .about-me {
+    width: 76%;
+  }
+}
+
+@media (max-width: 740px) {
+  .wrapper .contact .about-me {
+    width: 78%;
+  }
+}
+
+@media (max-width: 720px) {
+  .wrapper .contact .about-me {
+    width: 80%;
+  }
+}
+
+@media (max-width: 710px) {
+  .wrapper .contact .about-me {
+    width: 82%;
+  }
+}
+
+@media (max-width: 685px) {
+  .wrapper .contact .about-me {
+    width: 84%;
+  }
+}
+
+@media (max-width: 669px) {
+  .wrapper .contact .about-me {
+    width: 86%;
+  }
+}
+
+@media (max-width: 653px) {
+  .wrapper .contact .about-me {
+    width: 88%;
+  }
+}
+
+@media (max-width: 638px) {
+  .wrapper .contact .about-me {
+    width: 90%;
+  }
+}
+
+@media (max-width: 624px) {
+  .wrapper .contact .about-me {
+    width: 92%;
+  }
+}
+
+@media (max-width: 610px) {
+  .wrapper .contact .about-me {
+    width: 94%;
+  }
+}
+
+@media (max-width: 597px) {
+  .wrapper .contact .about-me {
+    width: 96%;
+  }
+}
+
+@media (max-width: 585px) {
+  .wrapper .contact .about-me {
+    width: 98%;
+  }
+}
+
+@media (max-width: 570px) {
+  .wrapper .contact .about-me {
+    width: 100%;
+  }
 }
 
 .wrapper .contact h3 {
