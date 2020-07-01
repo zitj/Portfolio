@@ -21,7 +21,6 @@ body {
 .intro.active .bottom {
   height: 50%;
   width: 100%;
-  background: #07c007;
   position: absolute;
   margin: 0%;
 }
@@ -41,6 +40,8 @@ body {
 }
 
 .intro.active .top {
+  background: -webkit-gradient(linear, left bottom, left top, from(#01f82a), to(#02ac1e));
+  background: linear-gradient(0deg, #01f82a, #02ac1e);
   top: 0%;
   -webkit-animation: topAnimation .6s ease-out;
           animation: topAnimation .6s ease-out;
@@ -72,6 +73,8 @@ body {
 }
 
 .intro.active .bottom {
+  background: -webkit-gradient(linear, left bottom, left top, from(#02ac1e), to(#01f82a));
+  background: linear-gradient(0deg, #02ac1e, #01f82a);
   bottom: 0%;
   -webkit-animation: bottomAnimation .6s ease-out;
           animation: bottomAnimation .6s ease-out;
@@ -136,12 +139,12 @@ body {
   outline: none;
 }
 
-.wrapper a::-moz-selection, .wrapper a:focus {
+.wrapper a::-moz-selection {
   color: white;
   background: #01f82a;
 }
 
-.wrapper a::selection, .wrapper a:focus {
+.wrapper a::selection {
   color: white;
   background: #01f82a;
 }
@@ -343,6 +346,9 @@ body {
 .wrapper .contact {
   width: 80%;
   margin-left: 10%;
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
   text-align: center;
 }
 
@@ -564,6 +570,34 @@ body {
   opacity: 1;
 }
 
+.wrapper .contact,
+.wrapper .swiper-wrapper {
+  -webkit-animation: animatedIn .25s ease-in;
+          animation: animatedIn .25s ease-in;
+}
+
+@-webkit-keyframes animatedIn {
+  0% {
+    opacity: 0;
+    margin-top: 160px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes animatedIn {
+  0% {
+    opacity: 0;
+    margin-top: 160px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
 .wrapper .swiper-pagination {
   position: absolute;
   bottom: 0%;
@@ -587,7 +621,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 5%;
+  margin-top: 3.5%;
   width: 300px;
   height: 400px;
   -webkit-box-pack: center;
@@ -619,7 +653,7 @@ body {
 .web-design .swiper-slide {
   width: 50%;
   height: 100%;
-  margin-top: 0%;
+  margin-top: -3%;
   position: relative;
 }
 

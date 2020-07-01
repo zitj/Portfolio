@@ -1,5 +1,5 @@
 const nav = document.querySelector('nav');
-const contact = document.querySelector('.contact');
+const contactSection = document.querySelector('.contact');
 const ovako = document.getElementById('ovako');
 const swiperContainer = document.getElementsByClassName('swiper-container');
 const swiperWrapper = document.getElementsByClassName('swiper-wrapper');
@@ -8,15 +8,22 @@ const intro = document.querySelector('.intro');
 const introTop = document.querySelector('.top');
 const introBottom = document.querySelector('.bottom');
 
+const graphicDesignSection = swiperContainer[0];
+const webDesignSection = swiperContainer[1];
+
 
 const buttonClassRemoval = () =>{
     for(let i = 0; i < sectionButtons.length; i++){
         sectionButtons[i].classList.remove('active');
     }
 }
+
 const classRemoval = () =>{
-    swiperContainer[0].classList.add('none');
-    swiperContainer[1].classList.add('none');
+    graphicDesignSection.classList.add('none');
+    webDesignSection.classList.add('none');
+}
+const contactIntroAnimationTiming = () =>{
+    contactSection.classList.remove('none');
 }
 const introAnimationEvent = () =>{
     intro.classList.remove('none');
@@ -27,23 +34,25 @@ for(let i = 0; i < sectionButtons.length; i++){
         buttonClassRemoval();
         sectionButtons[i].classList.add('active');
         if(sectionButtons[0].classList.contains('active')){
-            contact.classList.add('none');
-            swiperContainer[0].classList.add('none');
-            swiperContainer[1].classList.remove('none');
+            contactSection.classList.add('none');
+            graphicDesignSection.classList.add('none');
+            webDesignSection.classList.remove('none');
         }
         if(sectionButtons[1].classList.contains('active')){
-            contact.classList.add('none');
-            swiperContainer[0].classList.remove('none');
-            swiperContainer[1].classList.add('none');
+            contactSection.classList.add('none');
+            graphicDesignSection.classList.remove('none');
+            webDesignSection.classList.add('none');
         }
         if(sectionButtons[2].classList.contains('active')){
             classRemoval();
-            contact.classList.remove('none');
+            contactSection.classList.remove('none');
         }
     });
 }
-    introTop.addEventListener('animationend', () => {
-        intro.classList.remove('active');
-        intro.classList.add('none');
+introTop.addEventListener('animationend', () => {
+    intro.classList.remove('active');
+    intro.classList.add('none');
+    // contact.classList.remove('none');
       });
+setTimeout(contactIntroAnimationTiming, 465);
 setTimeout(classRemoval, 0);
