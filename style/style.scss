@@ -92,6 +92,9 @@ body{
     @include media("<=smallPhone"){
         height: 95%;
     }
+    a{
+        outline: none;
+    }
 nav{
     height: 50px;
     line-height: 48px;
@@ -99,9 +102,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-   
     a{
-        // background-color: rgba(7, 192, 7, 0.89);
         background: linear-gradient(#01f82a, #00d123);
         border-radius: 1px;
         color: white;
@@ -109,7 +110,6 @@ nav{
         display: flex;
         font-size: 1em;
         padding: 0 11%;
-        outline: none;
         @include media("<=desktop"){
             font-size: .95em;
         }

@@ -132,6 +132,10 @@ body {
   }
 }
 
+.wrapper a {
+  outline: none;
+}
+
 .wrapper nav {
   height: 50px;
   line-height: 48px;
@@ -156,7 +160,6 @@ body {
   display: flex;
   font-size: 1em;
   padding: 0 11%;
-  outline: none;
   text-transform: uppercase;
 }
 
