@@ -107,8 +107,8 @@ body {
 }
 
 .wrapper {
-  -webkit-box-shadow: 2px 2px 20px 5px rgba(4, 251, 4, 0.466);
-          box-shadow: 2px 2px 20px 5px rgba(4, 251, 4, 0.466);
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(4, 251, 4, 0.26);
+          box-shadow: 0px 0px 8px 2px rgba(4, 251, 4, 0.26);
   height: 600px;
   width: 900px;
   position: absolute;
@@ -146,7 +146,8 @@ body {
 }
 
 .wrapper nav a {
-  background-color: rgba(7, 192, 7, 0.89);
+  background: -webkit-gradient(linear, left top, left bottom, from(#01f82a), to(#00d123));
+  background: linear-gradient(#01f82a, #00d123);
   border-radius: 1px;
   color: white;
   text-decoration: none;
@@ -155,6 +156,7 @@ body {
   display: flex;
   font-size: 1em;
   padding: 0 11%;
+  outline: none;
   text-transform: uppercase;
 }
 
@@ -304,11 +306,11 @@ body {
 }
 
 .wrapper nav a:hover {
-  background-color: rgba(8, 185, 8, 0.979);
+  opacity: .85;
 }
 
 .wrapper nav a:active {
-  background-color: rgba(7, 192, 7, 0.89);
+  opacity: 1;
 }
 
 .wrapper nav .active {
