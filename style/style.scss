@@ -94,6 +94,11 @@ body{
     }
     a{
         outline: none;
+        &::selection,
+        &:focus {
+            color: white;
+            background: #01f82a;
+          }
     }
 nav{
     height: 50px;
@@ -224,6 +229,9 @@ nav{
         @include media("<=570px"){
             margin-top: 13%;
         }
+        @include media("<=500px"){
+            margin-top: 17%;
+        }
         @include media("<=smallPhone"){
             margin-top: -4%;
         }
@@ -285,6 +293,10 @@ nav{
         }
     }
     h3{
+        &::selection {
+            color: white;
+            background: #01f82a;
+          }
         font-size: 1.5em;
         &:nth-of-type(2){
             margin-top: 0px;
@@ -298,6 +310,10 @@ nav{
         }
     }
     p{
+        &::selection {
+            color: white;
+            background: #01f82a;
+          }
         &:nth-of-type(1){
         margin-top: 15px;
         margin-bottom: 15px;
@@ -337,16 +353,22 @@ nav{
         }
     }
 }
-
+.swiper-pagination{
+   position: absolute;
+   bottom: 0%;
+}
+.swiper-pagination-bullet{
+    background:#00d123;
+}
 .swiper-container.none{
     display: none;
 }
 .swiper-container{
-    height: 100%;
+    position: relative;
+    height: 500px;
     width: 100%;
     }
   .swiper-slide{
-    
     display:flex;
     margin-top: 5%;
     width: 300px;
@@ -372,7 +394,9 @@ nav{
 }
 .web-design{
 .swiper-container{
-    margin-top: 8%;
+    @include media("<=500px"){
+       
+    }  
 }
 .swiper-slide{
     width: 50%;
@@ -407,9 +431,8 @@ nav{
         width: 90%;
     }
     @include media("<=500px"){
-        margin-top: 25%;
-        
-    }  
+       margin-top: -16%;
+    } 
     img{
         @include media("<=500px"){
             width: 320px;
@@ -425,11 +448,18 @@ nav{
         color: white;
         text-decoration: none;
         position: absolute;
-        left: 7%;
+        bottom: 15%;
+        left: 28%;
         border-radius: 3px;
         transition: .2s ease;
         transform: scale(1);
         font-size: .25em;
+        @include media("<=500px"){
+            box-shadow: none;
+            left:34%;
+            bottom:10%;
+            background: rgba(11, 214, 11, 0.972);
+        }  
     }
     a:hover{
         box-shadow: 10px -10px 20px 0px rgba(4, 251, 4, 0.274);

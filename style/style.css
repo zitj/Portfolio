@@ -136,6 +136,16 @@ body {
   outline: none;
 }
 
+.wrapper a::-moz-selection, .wrapper a:focus {
+  color: white;
+  background: #01f82a;
+}
+
+.wrapper a::selection, .wrapper a:focus {
+  color: white;
+  background: #01f82a;
+}
+
 .wrapper nav {
   height: 50px;
   line-height: 48px;
@@ -363,6 +373,12 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .wrapper .contact .picture {
+    margin-top: 17%;
+  }
+}
+
 @media (max-width: 320px) {
   .wrapper .contact .picture {
     margin-top: -4%;
@@ -480,6 +496,16 @@ body {
   font-size: 1.5em;
 }
 
+.wrapper .contact h3::-moz-selection {
+  color: white;
+  background: #01f82a;
+}
+
+.wrapper .contact h3::selection {
+  color: white;
+  background: #01f82a;
+}
+
 .wrapper .contact h3:nth-of-type(2) {
   margin-top: 0px;
 }
@@ -490,6 +516,16 @@ body {
 
 .wrapper .contact h3:nth-of-type(1) {
   margin-top: 14px;
+}
+
+.wrapper .contact p::-moz-selection {
+  color: white;
+  background: #01f82a;
+}
+
+.wrapper .contact p::selection {
+  color: white;
+  background: #01f82a;
 }
 
 .wrapper .contact p:nth-of-type(1) {
@@ -528,12 +564,22 @@ body {
   opacity: 1;
 }
 
+.wrapper .swiper-pagination {
+  position: absolute;
+  bottom: 0%;
+}
+
+.wrapper .swiper-pagination-bullet {
+  background: #00d123;
+}
+
 .wrapper .swiper-container.none {
   display: none;
 }
 
 .wrapper .swiper-container {
-  height: 100%;
+  position: relative;
+  height: 500px;
   width: 100%;
 }
 
@@ -568,10 +614,6 @@ body {
 
 .wrapper .swiper-slide p {
   bottom: 4%;
-}
-
-.web-design .swiper-container {
-  margin-top: 8%;
 }
 
 .web-design .swiper-slide {
@@ -637,7 +679,7 @@ body {
 
 @media (max-width: 500px) {
   .web-design .swiper-slide {
-    margin-top: 25%;
+    margin-top: -16%;
   }
 }
 
@@ -658,13 +700,24 @@ body {
   color: white;
   text-decoration: none;
   position: absolute;
-  left: 7%;
+  bottom: 15%;
+  left: 28%;
   border-radius: 3px;
   -webkit-transition: .2s ease;
   transition: .2s ease;
   -webkit-transform: scale(1);
           transform: scale(1);
   font-size: .25em;
+}
+
+@media (max-width: 500px) {
+  .web-design .swiper-slide a {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    left: 34%;
+    bottom: 10%;
+    background: rgba(11, 214, 11, 0.972);
+  }
 }
 
 .web-design .swiper-slide a:hover {
