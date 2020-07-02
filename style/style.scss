@@ -293,14 +293,19 @@ nav{
     opacity: 1;
     transition: .3s ease-in-out;
     text-align: center;
+    position: relative;
     
     .picture{
         margin: 8% auto 0%;
         height: 130px;
         width: 130px;
+        position: relative;
         border: 1px solid #00BD21;
         border-radius: 80%;
-        background: url(../profilePicture/profilna3.png) center no-repeat;
+        // background: url(../profilePicture/profilna3.png) center no-repeat;
+        img{
+            clip-path: circle(65px at center);
+        }
         @include media("<=865px"){
             margin-top: 9%;
         }

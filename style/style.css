@@ -482,15 +482,21 @@ body {
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
   text-align: center;
+  position: relative;
 }
 
 .wrapper .contact .picture {
   margin: 8% auto 0%;
   height: 130px;
   width: 130px;
+  position: relative;
   border: 1px solid #00BD21;
   border-radius: 80%;
-  background: url(../profilePicture/profilna3.png) center no-repeat;
+}
+
+.wrapper .contact .picture img {
+  -webkit-clip-path: circle(65px at center);
+          clip-path: circle(65px at center);
 }
 
 @media (max-width: 865px) {
