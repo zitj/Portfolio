@@ -39,9 +39,12 @@ $breakpoints: (
   '310px': 310px,
   '325px': 325px,
   '335px': 335px,
+  '350px': 350px,
   '362px': 362px,
   '376px': 376px,
+  '385px': 385px,
   '395px': 395px,
+  '400px': 400px,
   '415px': 415px,
   '430px': 430px,
   '470px': 470px,
@@ -59,8 +62,8 @@ $breakpoints: (
   '597px': 597px,
   '610px': 610px,
   '624px': 624px,
-  '630px': 630px,
   '620px': 620px,
+  '630px': 630px,
   '638px': 638px,
   '650px': 650px,
   '653px': 653px,
@@ -83,7 +86,11 @@ $breakpoints: (
   '865px': 865px,
   '950px': 950px,
   'desktop': 1024px,
-  'laptopHDPI': 1440px
+  '1170px': 1170px,
+  'laptopHDPI': 1440px,
+  '1600px': 1600px,
+  '1800px': 1800px,
+  '2000px': 2000px,
 ) !default;
 
 

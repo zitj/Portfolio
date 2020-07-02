@@ -39,14 +39,23 @@ body {
           transform: rotate(90deg);
 }
 
+.intro.active .top,
+.intro.active .bottom {
+  -webkit-animation: indexAnimation .6s ease-out;
+          animation: indexAnimation .6s ease-out;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.intro.active .top .letter,
+.intro.active .bottom .letter {
+  opacity: .33;
+}
+
 .intro.active .top {
   background: -webkit-gradient(linear, left bottom, left top, from(#01f82a), to(#02ac1e));
   background: linear-gradient(0deg, #01f82a, #02ac1e);
   top: 0%;
-  -webkit-animation: topAnimation .6s ease-out;
-          animation: topAnimation .6s ease-out;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
 }
 
 .intro.active .top .letter {
@@ -54,21 +63,24 @@ body {
   left: 48.2%;
 }
 
-@-webkit-keyframes topAnimation {
-  0% {
-    height: 50%;
-  }
-  100% {
-    height: 0%;
+@media (max-width: 1440px) {
+  .intro.active .top .letter {
+    left: 51%;
+    bottom: -8%;
   }
 }
 
-@keyframes topAnimation {
-  0% {
-    height: 50%;
+@media (max-width: 1024px) {
+  .intro.active .top .letter {
+    left: 51%;
+    bottom: -8%;
   }
-  100% {
-    height: 0%;
+}
+
+@media (max-width: 830px) {
+  .intro.active .top .letter {
+    left: 51%;
+    bottom: -8%;
   }
 }
 
@@ -76,18 +88,138 @@ body {
   background: -webkit-gradient(linear, left bottom, left top, from(#02ac1e), to(#01f82a));
   background: linear-gradient(0deg, #02ac1e, #01f82a);
   bottom: 0%;
-  -webkit-animation: bottomAnimation .6s ease-out;
-          animation: bottomAnimation .6s ease-out;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
 }
 
 .intro.active .bottom .letter {
-  left: 51.5%;
-  top: -10%;
+  left: 54.5%;
+  top: -13%;
 }
 
-@-webkit-keyframes bottomAnimation {
+@media (max-width: 2000px) {
+  .intro.active .bottom .letter {
+    left: 51.3%;
+    top: -3%;
+  }
+}
+
+@media (max-width: 1800px) {
+  .intro.active .bottom .letter {
+    left: 51.8%;
+    top: -3%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .intro.active .bottom .letter {
+    left: 52.4%;
+    top: -3%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .intro.active .bottom .letter {
+    left: 55.4%;
+    top: -13%;
+  }
+}
+
+@media (max-width: 1170px) {
+  .intro.active .bottom .letter {
+    left: 56.8%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro.active .bottom .letter {
+    left: 57.5%;
+  }
+}
+
+@media (max-width: 830px) {
+  .intro.active .bottom .letter {
+    left: 58.5%;
+  }
+}
+
+@media (max-width: 760px) {
+  .intro.active .bottom .letter {
+    left: 59.5%;
+  }
+}
+
+@media (max-width: 680px) {
+  .intro.active .bottom .letter {
+    left: 60.5%;
+  }
+}
+
+@media (max-width: 620px) {
+  .intro.active .bottom .letter {
+    left: 61.5%;
+  }
+}
+
+@media (max-width: 570px) {
+  .intro.active .bottom .letter {
+    left: 62.5%;
+  }
+}
+
+@media (max-width: 530px) {
+  .intro.active .bottom .letter {
+    left: 63%;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro.active .bottom .letter {
+    left: 64.5%;
+  }
+}
+
+@media (max-width: 430px) {
+  .intro.active .bottom .letter {
+    left: 65.5%;
+  }
+}
+
+@media (max-width: 400px) {
+  .intro.active .bottom .letter {
+    left: 66.5%;
+  }
+}
+
+@media (max-width: 385px) {
+  .intro.active .bottom .letter {
+    left: 67.5%;
+  }
+}
+
+@media (max-width: 376px) {
+  .intro.active .bottom .letter {
+    left: 67.8%;
+  }
+}
+
+@media (max-width: 362px) {
+  .intro.active .bottom .letter {
+    top: -18%;
+  }
+}
+
+@media (max-width: 350px) {
+  .intro.active .bottom .letter {
+    left: 68.8%;
+  }
+}
+
+@media (max-width: 325px) {
+  .intro.active .bottom .letter {
+    left: 70%;
+  }
+}
+
+@-webkit-keyframes indexAnimation {
   0% {
     height: 50%;
   }
@@ -96,7 +228,7 @@ body {
   }
 }
 
-@keyframes bottomAnimation {
+@keyframes indexAnimation {
   0% {
     height: 50%;
   }

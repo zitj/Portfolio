@@ -54,5 +54,5 @@ introTop.addEventListener('animationend', () => {
     intro.classList.add('none');
     // contact.classList.remove('none');
       });
-setTimeout(contactIntroAnimationTiming, 465);
+setTimeout(contactIntroAnimationTiming, 1490);
 setTimeout(classRemoval, 0);
