@@ -745,8 +745,8 @@ body {
   left: 50%;
   bottom: 4%;
   opacity: .7;
-  -webkit-animation: swipe .85s ease-in-out;
-          animation: swipe .85s ease-in-out;
+  -webkit-animation: swipe 1.8s ease-in-out;
+          animation: swipe 1.8s ease-in-out;
 }
 
 @-webkit-keyframes swipe {

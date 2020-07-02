@@ -458,7 +458,7 @@ nav{
     left: 50%;
     bottom: 4%;
     opacity: .7;
-    animation: swipe .85s ease-in-out;
+    animation: swipe 1.8s ease-in-out;
     @keyframes swipe {
         0%{
             left:65%;
