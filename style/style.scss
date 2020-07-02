@@ -39,7 +39,7 @@ body{
     .top,
     .bottom{
         animation: indexAnimation .6s ease-out;
-        animation-delay: 1.5s;
+        animation-delay: 1s;
         .letter{
             opacity: .33;
         }
@@ -168,6 +168,7 @@ body{
     @include media("<=smallPhone"){
         height: 95%;
     }
+
     a{
         outline: none;
         &::selection {
@@ -283,10 +284,7 @@ nav{
 }
 .contact.none{
     display: none;
-  
 }
-
-
 .contact{
     width: 80%;
     margin-left: 10%;
@@ -294,7 +292,6 @@ nav{
     transition: .3s ease-in-out;
     text-align: center;
     position: relative;
-    
     .picture{
         margin: 8% auto 0%;
         height: 130px;
@@ -453,6 +450,29 @@ nav{
         }
     }
 }
+.swipeIlustration.none{
+    display: none;
+}
+.swipeIlustration{
+    position: absolute;
+    left: 50%;
+    bottom: 4%;
+    opacity: .7;
+    animation: swipe .85s ease-in-out;
+    @keyframes swipe {
+        0%{
+            left:65%;
+        }
+        50%{
+            left:35%;
+            opacity: .9;
+        }
+        100%{
+            left:65%;
+            opacity: 0;
+        }
+    }
+}
 .swiper-pagination{
    position: absolute;
    bottom: 0%;
@@ -492,6 +512,7 @@ nav{
     }
   }
 }
+
 .web-design{
 .swiper-container{
     @include media("<=500px"){
@@ -541,7 +562,7 @@ nav{
     }
     a{
         padding: 8px 16px;
-        background: rgba(7, 192, 7, 0.829);
+        background: rgba(8, 224, 8, 0.829);
         box-shadow: 8px -8px 20px 0px rgba(4, 251, 4, 0.157);
         font-weight: 300;
         text-transform: uppercase;
@@ -558,20 +579,19 @@ nav{
             box-shadow: none;
             left:34%;
             bottom:10%;
-            background: rgba(11, 214, 11, 0.972);
+            background: rgba(8, 224, 8, 0.972);
         }  
     }
     a:hover{
         box-shadow: 10px -10px 20px 0px rgba(4, 251, 4, 0.274);
-        background: rgba(11, 214, 11, 0.972);
-        // padding: 11px 21px;
-        transform: scale(1.03);
+        background: rgba(8, 224, 8, 0.972);
+        font-size: .28em;
     }
     a:active{
         box-shadow: 7px -7px 20px 0px rgba(4, 251, 4, 0.200);
         background: rgba(7, 192, 7, 0.89);
-        // padding: 10px 20px;
-        transform: scale(1);
+        font-size: .25em;
     }
 }
+
 }
