@@ -50,6 +50,26 @@ body {
 .intro.active .top .letter,
 .intro.active .bottom .letter {
   opacity: .33;
+  -webkit-animation: letterAnimation 1.6s ease-in;
+          animation: letterAnimation 1.6s ease-in;
+}
+
+@-webkit-keyframes letterAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .88;
+  }
+}
+
+@keyframes letterAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .88;
+  }
 }
 
 .intro.active .top {
@@ -497,6 +517,8 @@ body {
 .wrapper .contact .picture img {
   -webkit-clip-path: circle(65px at center);
           clip-path: circle(65px at center);
+  height: 130px;
+  width: 108px;
 }
 
 @media (max-width: 865px) {
@@ -827,6 +849,11 @@ body {
 
 .wrapper .swiper-slide p {
   bottom: 4%;
+}
+
+.graphic-design .swiper-slide img {
+  width: 300px;
+  height: 400px;
 }
 
 .web-design .swiper-slide {
