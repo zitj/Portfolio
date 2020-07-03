@@ -281,6 +281,15 @@ body {
   }
 }
 
+@media (max-width: 380px) {
+  .wrapper {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    height: 90vh;
+    width: 100%;
+  }
+}
+
 @media (max-width: 320px) {
   .wrapper {
     height: 95%;
@@ -541,7 +550,7 @@ body {
 
 @media (max-width: 500px) {
   .wrapper .contact .picture {
-    margin-top: 17%;
+    margin-top: 12%;
   }
 }
 
@@ -799,9 +808,21 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .wrapper .swipeIlustration {
+    bottom: 8%;
+  }
+}
+
 .wrapper .swiper-pagination {
   position: absolute;
   bottom: 0%;
+}
+
+@media (max-width: 500px) {
+  .wrapper .swiper-pagination {
+    bottom: 5.5%;
+  }
 }
 
 .wrapper .swiper-pagination-bullet {
