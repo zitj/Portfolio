@@ -455,6 +455,7 @@ nav{
 .contact,
 .swiper-wrapper{
     animation: animatedIn .25s ease-in;
+    
     @keyframes animatedIn {
         0%{
             opacity: 0;
@@ -540,16 +541,11 @@ nav{
         img{
              width: 300px;
              height: 400px;
-        
         }
     }
 }
 .web-design{
-.swiper-container{
-    @include media("<=500px"){
-       
-    }  
-}
+
 .swiper-slide{
     width: 50%;
     height: 100%;
