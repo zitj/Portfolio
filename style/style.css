@@ -826,6 +826,20 @@ body {
   }
 }
 
+.wrapper .swiper-button-prev,
+.wrapper .swiper-button-next {
+  color: #00d123;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+@media (max-width: 500px) {
+  .wrapper .swiper-button-prev,
+  .wrapper .swiper-button-next {
+    display: none;
+  }
+}
+
 .wrapper .swiper-pagination-bullet {
   background: #00d123;
 }
