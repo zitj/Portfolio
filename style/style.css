@@ -325,8 +325,8 @@ body {
 }
 
 .wrapper nav a {
-  background: -webkit-gradient(linear, left top, left bottom, from(#01f82a), to(#00d123));
-  background: linear-gradient(#01f82a, #00d123);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00cc22), to(#00c721));
+  background: linear-gradient(#00cc22, #00c721);
   border-radius: 1px;
   color: white;
   text-decoration: none;
