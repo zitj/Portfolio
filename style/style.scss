@@ -625,12 +625,12 @@ nav{
     }
     a:hover{
         box-shadow: 10px -10px 20px 0px rgba(4, 251, 4, 0.274);
-        background: rgba(8, 224, 8, 0.972);
+        opacity: .8;
         font-size: .28em;
     }
     a:active{
         box-shadow: 7px -7px 20px 0px rgba(4, 251, 4, 0.200);
-        background: rgba(7, 192, 7, 0.89);
+        opacity: 1;
         font-size: .25em;
     }
 }
