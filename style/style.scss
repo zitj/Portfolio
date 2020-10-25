@@ -7,7 +7,10 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: #333333;
     overflow: hidden;
-    background: white;
+    background: url("../background/pattern1.png") repeat;
+    @include media("<=400px"){
+        background: white;
+    }
 }
 .intro.none{
     display: none;
@@ -164,6 +167,7 @@ body{
 }
 .wrapper{
     box-shadow: 0px 0px 8px 2px rgba(4, 251, 4, 0.26);
+    background: white;
     height: 600px;
     width: 900px;
     position: absolute;
@@ -503,7 +507,7 @@ nav{
 }
 .swiper-button-prev,
 .swiper-button-next{
-    color: #00d123;
+    color: #00c721;
     margin-left:2%;
     margin-right:2%;
     @include media("<=500px"){
@@ -512,7 +516,7 @@ nav{
 }
 .swiper-pagination-bullet
 {
-    background: #00d123;
+    background: $gradientGreen;
 }
 .swiper-container.none{
     display: none;
@@ -600,7 +604,7 @@ nav{
     }
     a{
         padding: 8px 16px;
-        background: rgba(8, 224, 8, 0.829);
+        background: $gradientGreen;
         box-shadow: 8px -8px 20px 0px rgba(4, 251, 4, 0.157);
         font-weight: 300;
         text-transform: uppercase;
@@ -617,7 +621,6 @@ nav{
             box-shadow: none;
             left:34%;
             bottom:10%;
-            background: rgba(8, 224, 8, 0.972);
         }  
     }
     a:hover{

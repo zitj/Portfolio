@@ -4,7 +4,13 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #333333;
   overflow: hidden;
-  background: white;
+  background: url("../background/pattern1.png") repeat;
+}
+
+@media (max-width: 400px) {
+  body {
+    background: white;
+  }
 }
 
 .intro.none {
@@ -265,6 +271,7 @@ body {
 .wrapper {
   -webkit-box-shadow: 0px 0px 8px 2px rgba(4, 251, 4, 0.26);
           box-shadow: 0px 0px 8px 2px rgba(4, 251, 4, 0.26);
+  background: white;
   height: 600px;
   width: 900px;
   position: absolute;
@@ -828,7 +835,7 @@ body {
 
 .wrapper .swiper-button-prev,
 .wrapper .swiper-button-next {
-  color: #00d123;
+  color: #00c721;
   margin-left: 2%;
   margin-right: 2%;
 }
@@ -841,7 +848,8 @@ body {
 }
 
 .wrapper .swiper-pagination-bullet {
-  background: #00d123;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00cc22), to(#00c721));
+  background: linear-gradient(#00cc22, #00c721);
 }
 
 .wrapper .swiper-container.none {
@@ -968,7 +976,8 @@ body {
 
 .web-design .swiper-slide a {
   padding: 8px 16px;
-  background: rgba(8, 224, 8, 0.829);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00cc22), to(#00c721));
+  background: linear-gradient(#00cc22, #00c721);
   -webkit-box-shadow: 8px -8px 20px 0px rgba(4, 251, 4, 0.157);
           box-shadow: 8px -8px 20px 0px rgba(4, 251, 4, 0.157);
   font-weight: 300;
@@ -992,7 +1001,6 @@ body {
             box-shadow: none;
     left: 34%;
     bottom: 10%;
-    background: rgba(8, 224, 8, 0.972);
   }
 }
 
