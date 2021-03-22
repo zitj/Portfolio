@@ -900,6 +900,10 @@ body {
   height: 400px;
 }
 
+.graphic-design .swiper-slide .logos {
+  width: 360px;
+}
+
 .web-design .swiper-slide {
   width: 50%;
   height: 100%;
