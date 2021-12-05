@@ -739,6 +739,10 @@ body {
   margin-bottom: 20px;
 }
 
+.wrapper .contact .icons a {
+  text-decoration: none;
+}
+
 .wrapper .contact .icons a:hover {
   opacity: 0.8;
 }
@@ -1019,5 +1023,9 @@ body {
   -webkit-box-shadow: 1px -1px 20px 0px rgba(4, 251, 4, 0.2);
           box-shadow: 1px -1px 20px 0px rgba(4, 251, 4, 0.2);
   opacity: 1;
+}
+
+.web-design .swiper-slide a:visited {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

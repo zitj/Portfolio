@@ -440,6 +440,7 @@ body {
 		}
 		.icons {
 			a {
+				text-decoration: none;
 				&:hover {
 					opacity: 0.8;
 				}
@@ -623,6 +624,9 @@ body {
 		a:active {
 			box-shadow: 1px -1px 20px 0px rgba(4, 251, 4, 0.2);
 			opacity: 1;
+		}
+		a:visited {
+			text-decoration: none;
 		}
 	}
 }
