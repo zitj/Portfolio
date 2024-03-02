@@ -1,5 +1,6 @@
 @import 'include-media.scss';
-$gradientGreen: linear-gradient(#00cc22, #00c721);
+// $gradientGreen: linear-gradient(#00cc22, #00c721);
+$gradientGreen: linear-gradient(#00cc22, #107e22);
 
 body {
 	margin: 0;
@@ -197,7 +198,7 @@ body {
 		line-height: 48px;
 		margin-bottom: 30px;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		text-align: center;
 		a {
 			background: $gradientGreen;
@@ -206,80 +207,26 @@ body {
 			text-decoration: none;
 			display: flex;
 			font-size: 1em;
-			padding: 0 11%;
+			width: 100%;
+			justify-content: center;
+			&:nth-child(2) {
+				border: 3px solid rgb(255, 255, 255);
+				border-top: none;
+				border-bottom: none;
+			}
+			&.active {
+				text-decoration: underline;
+				text-underline-offset: 0.3em;
+				text-decoration-color: rgba(255, 255, 255, 0.511);
+				text-decoration-thickness: 2px;
+			}
 			@include media('<=desktop') {
-				font-size: 0.95em;
-			}
-			@include media('<=950px') {
-				padding: 0 10.5%;
-			}
-			@include media('<=860px') {
-				padding: 0 10.3%;
-				font-size: 0.9em;
-			}
-			@include media('<=790px') {
-				padding: 0 9.8%;
-			}
-
-			@include media('<=730px') {
-				padding: 0 9%;
-			}
-			@include media('<=685px') {
-				padding: 0 8.5%;
-			}
-			@include media('<=610px') {
-				padding: 0 8%;
-			}
-			@include media('<=595px') {
-				padding: 0 7.8%;
-			}
-			@include media('<=585px') {
-				padding: 0 7.5%;
-			}
-			@include media('<=550px') {
-				padding: 0 7%;
-			}
-			@include media('<=530px') {
-				padding: 0 6.5%;
-			}
-			@include media('<=490px') {
-				padding: 0 6%;
-			}
-			@include media('<=470px') {
-				padding: 0 5%;
-			}
-			@include media('<=430px') {
-				padding: 0 4.5%;
-			}
-			@include media('<=415px') {
-				padding: 0 4%;
-			}
-			@include media('<=395px') {
-				padding: 0 3.5%;
-			}
-			@include media('<=395px') {
-				padding: 0 3.5%;
-			}
-			@include media('<=376px') {
-				padding: 0 3%;
-			}
-			@include media('<=362px') {
-				font-size: 0.86em;
-			}
-			@include media('<=350px') {
-				font-size: 0.83em;
-			}
-			@include media('<=335px') {
-				font-size: 0.8em;
-			}
-			@include media('<=325px') {
-				font-size: 0.76em;
-			}
-			@include media('<=310px') {
-				font-size: 0.73em;
-			}
-			@include media('<=300px') {
-				font-size: 0.68em;
+				font-size: 11px;
+				&:nth-child(2) {
+					border: 3px solid rgb(255, 255, 255);
+					border-top: none;
+					border-bottom: none;
+				}
 			}
 			text-transform: uppercase;
 			&:hover {
@@ -287,14 +234,6 @@ body {
 			}
 			&:active {
 				opacity: 1;
-			}
-		}
-		.active {
-			background: white;
-			color: #333333;
-			&:hover {
-				background: white;
-				color: #333333;
 			}
 		}
 	}

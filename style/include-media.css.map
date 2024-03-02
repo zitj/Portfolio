@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "include-media.scss"
-    ],
-    "names": [],
-    "file": "include-media.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"include-media.css"}
