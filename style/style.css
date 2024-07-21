@@ -307,8 +307,37 @@ body {
   text-align: center;
   position: relative;
 }
+.wrapper .contact #download-cv {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8px 16px;
+  background: linear-gradient(#00cc22, #107e22);
+  color: white;
+  border-radius: 3px;
+  border: none;
+  margin: 0 auto;
+  line-height: 19px;
+  width: 130px;
+  font-size: 15px;
+  opacity: 1;
+  text-decoration: none;
+}
+.wrapper .contact #download-cv:hover {
+  opacity: 0.8;
+}
+.wrapper .contact #download-cv:active {
+  opacity: 1;
+}
+.wrapper .contact #download-cv:visited {
+  color: white;
+}
+.wrapper .contact #download-cv svg {
+  width: 18px;
+  margin-right: 2px;
+}
 .wrapper .contact .picture {
-  margin: 8% auto 0%;
+  margin: 10px auto 0;
   height: 130px;
   width: 130px;
   position: relative;
@@ -437,6 +466,7 @@ body {
 }
 .wrapper .contact h3 {
   font-size: 1.5em;
+  font-weight: 600;
 }
 .wrapper .contact h3::-moz-selection {
   color: white;
@@ -447,7 +477,7 @@ body {
   background: #01f82a;
 }
 .wrapper .contact h3:nth-of-type(2) {
-  margin-top: 0px;
+  margin-top: -5px;
 }
 .wrapper .contact h3:nth-of-type(1), .wrapper .contact h3:nth-of-type(2) {
   margin-bottom: 0px;
@@ -696,4 +726,15 @@ body {
 }
 .web-design .swiper-slide a:visited {
   text-decoration: none;
+}
+
+.contact-link {
+  color: #00cc22;
+  opacity: 1;
+}
+.contact-link:hover, .contact-link:active {
+  opacity: 0.7;
+}
+.contact-link:visited {
+  color: #00cc22;
 }/*# sourceMappingURL=style.css.map */

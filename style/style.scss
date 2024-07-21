@@ -247,8 +247,37 @@ body {
 		transition: 0.3s ease-in-out;
 		text-align: center;
 		position: relative;
+		#download-cv {
+			cursor: pointer;
+			display: flex;
+			justify-content: space-evenly;
+			padding: 8px 16px;
+			background: $gradientGreen;
+			color: white;
+			border-radius: 3px;
+			border: none;
+			margin: 0 auto;
+			line-height: 19px;
+			width: 130px;
+			font-size: 15px;
+			opacity: 1;
+			text-decoration: none;
+			&:hover {
+				opacity: 0.8;
+			}
+			&:active {
+				opacity: 1;
+			}
+			&:visited {
+				color: white;
+			}
+			svg {
+				width: 18px;
+				margin-right: 2px;
+			}
+		}
 		.picture {
-			margin: 8% auto 0%;
+			margin: 10px auto 0;
 			height: 130px;
 			width: 130px;
 			position: relative;
@@ -336,8 +365,9 @@ body {
 				background: #01f82a;
 			}
 			font-size: 1.5em;
+			font-weight: 600;
 			&:nth-of-type(2) {
-				margin-top: 0px;
+				margin-top: -5px;
 			}
 			&:nth-of-type(1),
 			&:nth-of-type(2) {
@@ -388,6 +418,17 @@ body {
 				}
 			}
 		}
+		// .contact-link {
+		// 	color: #00cc22;
+		// 	opacity: 1;
+		// 	&:hover,
+		// 	&:active {
+		// 		opacity: 0.7;
+		// 	}
+		// 	&:visited {
+		// 		color: #00cc22;
+		// 	}
+		// }
 	}
 	.contact,
 	.swiper-wrapper {
@@ -567,5 +608,17 @@ body {
 		a:visited {
 			text-decoration: none;
 		}
+	}
+}
+
+.contact-link {
+	color: #00cc22;
+	opacity: 1;
+	&:hover,
+	&:active {
+		opacity: 0.7;
+	}
+	&:visited {
+		color: #00cc22;
 	}
 }
